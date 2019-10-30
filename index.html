@@ -11,6 +11,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 body{
     background: grey;
@@ -19,8 +20,37 @@ header{
     position: relative;
     margin: 20px auto;
     width: 1000px;
-    height: 128px;
+    height: 120px;
     background: black;
+}
+#logo{
+    position:absolute;
+    width: 200px;
+    height: 60px;
+    background: white;
+    top : 30px;
+    left: 30px;
+}
+.redes{
+    position:absolute;
+    width: 42px;
+    height: 42px;
+    background: white;
+    border-radius: 100%;
+ 
+}
+
+#icono1{
+    top: 42px;
+    right: 120px;
+}
+#icono2{
+    top: 42px;
+    right: 71px;
+}
+#icono3{
+    top: 42px;
+    right: 19px;
 }
 nav{
     position: relative;
@@ -29,6 +59,13 @@ nav{
     height: 48px;
     background: red;
 }
+.botones{
+    float: left;
+    width: 19.6%;
+    height: 48px;
+    background: violet;
+    margin: 0px 0.2%;
+}
 #top{
     position: relative;
     margin:  20px auto;
@@ -36,12 +73,51 @@ nav{
     height: 192px;
     background: blue
 }
+#top ul{
+    width: 1010px;
+    height:192px ;
+
+}
+#top ul li{
+    float: left;
+    width: 326px;
+    margin-right: 1%;
+    height: 192px;
+    background: skyblue;
+}
 section{
     position: relative;
     margin:  auto;
     width: 1000px;
     height: 453px;
     background: yellow;
+}
+aside#izq{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 453px;
+    background: violet;
+
+}
+
+article{
+    position: absolute;
+    left: 200px;
+    width: 600px;
+    height: 453px;
+    top: 0;
+    background: yellowgreen;
+}
+aside#der{
+    position: absolute;
+    right:   0;
+    top: 0;
+    width: 200px;
+    height: 453px;
+    background: violet;
+
 }
 footer{
     position: relative;
@@ -57,12 +133,13 @@ footer{
 <body>
     <header>
         <div id="logo"></div>
-        <div id="icono1"></div>
-        <div id="icono2"></div>
-        <div id="icono3"></div>
+        <div id="icono1" class="redes"></div>
+        <div id="icono2" class="redes"></div>
+        <div id="icono3" class="redes"></div>
     </header>
     <nav>
         <ul>
+            <li class="botones"></li>
             <li class="botones"></li>
             <li class="botones"></li>
             <li class="botones"></li>
@@ -77,10 +154,18 @@ footer{
         </ul>
     </div>
     <section>
+        <aside id="izq">
 
+        </aside>
+        <article>
+
+        </article>
+        <aside id="der">
+
+        </aside>
     </section>
     <footer>
-        
+
     </footer>
 </body>
 </html>
