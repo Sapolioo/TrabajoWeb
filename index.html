@@ -4,203 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
     <title>index</title>
-    <style>
-    
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: cursive;
-     
-}
-body{
-    background-color: black;
-    background-image: url(imagenes/galaxia4.jpg)  ;
-    background-repeat:no-repeat;
-    background-size: 100%;
-    background-position-y: center;
-}
-header{
-    position: relative;
-    margin: 20px auto;
-    width: 1000px;
-    height: 120px;
-    background: transparent;
-}
-header div img {
-    width: 100%;
-    height: 100%;
-    filter: invert(100%);
-}
-#logo{
-    position:absolute;
-    width: 200px;
-    height: 60px;
-    background: white;
-    top : 30px;
-    left: 30px;
-}
-.redes{
-    position:absolute;
-    width: 42px;
-    height: 42px;
-    background: white;
-    border-radius: 100%;
- 
-}
-
-#icono1{
-    top: 42px;
-    right: 120px;
-    background-image: url(iconos/facebook.png);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 105%;
-}
-#icono2{
-    top: 42px;
-    right: 71px;
-    background-image: url(iconos/Google.png);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 140%;
-}
-#icono3{
-    top: 42px;
-    right: 19px;
-    background-image: url(iconos/twiter.png);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 140%;
-}
-nav{
-    position: relative;
-    margin:  auto;
-    width: 1000px;
-    height: 48px;
-    background: transparent;
-}
-.botones{
-    float: left;
-    width: 19.6%;
-    height: 48px;
-    background: transparent;
-    margin: 0px 0.2%;
-    text-align: center;
-
-}
-.textoBotones{
-    position: absolute;
-    font-size: 20px;
-    color: grey;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.textoBotones:hover{
-    color: white;
-}
-#top{
-    position: relative;
-    margin:  20px auto;
-    width: 1000px;
-    height: 192px;
-    background:transparent;
-}
-#top ul{
-    width: 1010px;
-    height:192px ;
-}
-#top ul li{
-    float: left;
-    width: 326px;
-    margin-right: 1%;
-    height: 192px;
-    background: transparent;
-}
-.imagenRecomendada{
-    height: 80%;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-}
-.imagenRecomendadaimg{
-    
-    height: 90%;
-    width: 90%;
-}
-.textRecomendadada{
-    font-size: 30px;
-    height: 20%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center ;
-    bottom: 0;
-    background-color: transparent;
-}
-
-.textRecomendadada a{
-color:grey
-}
-.textRecomendadada a:hover{
-color:white
-}
-section{
-    position: relative;
-    margin:  auto;
-    width: 1000px;
-    height: 453px;
-    background: transparent;
-}
-aside#izq{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: 453px;
-    background: transparent;
-
-}
-
-article{
-    position: absolute;
-    left: 200px;
-    width: 600px;
-    height: 453px;
-    top: 0;
-    background: yellowgreen;
-}
-article img{
-    width: 800px;
-}
-#titulodelproducto{
-    color: thistle;
-    text-align: center;
-}
-#descripciondelproducto{
-    color: thistle;
-    text-align: center;
-}
-aside#der{
-    position: absolute;
-    right:   0;
-    top: 0;
-    width: 200px;
-    height: 453px;
-    background: transparent;
-
-}
-footer{
-    position: relative;
-    margin:  20px auto;
-    width: 1000px;
-    height: 70px;
-    background: green;
-}
-    
-    </style>
+   
 </head>
 <body>
     <header>
@@ -232,29 +38,32 @@ footer{
     </nav>
     <div id="top"> 
         <ul>
-            <li>
-                <div class="imagenRecomendada">
-                    <img class="imagenRecomendadaimg" src="imagenes/icono2.png" alt="equis de">
-                </div>
-                <div class="textRecomendadada">
-                    <a href=""> Nombre del Articulo </a>
-                </div>
+                <li id="cajapadre">
+                        <img src="imagenes/Diablo.jpg" alt="equis de" class="imagenRecomendadaimg">
+                        <div id="contenedor">
+                        <div id="contenedorsuperior"></div>
+                        <div id="contenedorinferior">
+                        <span><strong>DIABLO IV</strong></span>
+                        </div>
+                        </div>
+                </li>
+            <li id="cajapadre">
+                    <img src="imagenes/conter.jpg" alt="equis de" class="imagenRecomendadaimg">
+                    <div id="contenedor">
+                    <div id="contenedorsuperior"></div>
+                    <div id="contenedorinferior">
+                    <span><strong>COUNTER STRIKE GO</strong></span>
+                    </div>
+                    </div>
             </li>
-            <li>
-                <div class="imagenRecomendada">
-                <img src="imagenes/Diablo.jpg" class="imagenRecomendadaimg" alt="equis de">
-            </div>
-                <div class="textRecomendadada">
-                    <a href=""> Nombre del Articulo </a>
-                </div>
-            </li>
-            <li>
-                <div class="imagenRecomendada">
-                <img src="imagenes/icono3.png" alt="equis de" class="imagenRecomendadaimg">
-            </div>
-                <div class="textRecomendadada">
-                    <a href=""> Nombre del Articulo </a>
-                </div>
+            <li id="cajapadre">
+                    <img src="imagenes/Assassins.jpg" alt="equis de" class="imagenRecomendadaimg">
+                    <div id="contenedor">
+                    <div id="contenedorsuperior"></div>
+                    <div id="contenedorinferior">
+                    <span><strong>ASSASSINS REMASTERED</strong></span>
+                    </div>
+                    </div>
             </li>
         </ul>
     </div>
@@ -265,7 +74,9 @@ footer{
             </div>
         </aside>
         <article>
-            <img src="../Infinity/imagenes/war1.jpg" alt="SPAe">
+            <div>
+                <img src="../Infinity/imagenes/war1.jpg" alt="SPAe">
+            </div>
         </article>
         <aside id="der">
             <div></div>
@@ -274,7 +85,7 @@ footer{
         </aside>
     </section>
     <footer>
-
+        <div id="footerText">Contactos <hr> Daniel Marcelo Vega Aguirre</div>
     </footer>
 </body>
 </html>

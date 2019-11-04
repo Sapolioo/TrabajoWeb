@@ -1,0 +1,230 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: cursive;
+     
+}
+body{
+    background-color: black;
+    background-image: url(../imagenes/galaxia4.jpg)  ;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+}
+header{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 120px;
+    background: transparent;
+}
+header div img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
+}
+#logo{
+    position:absolute;
+    width: 200px;
+    height: 60px;
+    background: white;
+    top : 30px;
+    left: 30px;
+}
+.redes{
+    position:absolute;
+    width: 42px;
+    height: 42px;
+    background: white;
+    border-radius: 100%;
+ 
+}
+
+#icono1{
+    top: 42px;
+    right: 120px;
+    background-image: url(../iconos/facebook.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 105%;
+}
+#icono2{
+    top: 42px;
+    right: 71px;
+    background-image: url(../iconos/Google.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 140%;
+}
+#icono3{
+    top: 42px;
+    right: 19px;
+    background-image: url(../iconos/twiter.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 140%;
+}
+nav{
+    position: relative;
+    margin:  auto;
+    width: 1000px;
+    height: 48px;
+    background: transparent;
+}
+.botones{
+    float: left;
+    width: 19.6%;
+    height: 48px;
+    background: transparent;
+    margin: 0px 0.2%;
+    text-align: center;
+
+}
+.textoBotones{
+    position: absolute;
+    font-size: 20px;
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.textoBotones:hover{
+    color: white;
+}
+#top{
+    position: relative;
+    margin:  20px auto;
+    width: 1000px;
+    height: 190px;
+    background:transparent;
+}
+#top ul{
+    width: 1010px;
+    height:190px ;
+}
+#top ul li{
+    float: left;
+    width: 326px;
+    margin-right: 1%;
+    height: 190px;
+    background: transparent;
+}
+#cajapadre {
+position: relative;
+width: 326px;
+height: 190px;
+overflow: hidden;
+border-radius: 10px;
+}
+#contenedor {
+position: absolute;
+top: 0px;
+width: 326px;
+height: 324px;
+border-radius: 10px;
+}
+#contenedorsuperior {
+width: 326px;
+height: 190px;border-radius: 10px;
+}
+#contenedorinferior {
+width: 326px;
+height: 35px;
+padding-top: 15px;
+background-color: transparent;
+text-align: center;
+color: black    ;
+background: rgba(11, 16, 84,0.7);
+border-radius: 10px;
+}
+#contenedor:hover {
+top: -50px;
+border-radius: 10px;
+}
+
+
+
+
+
+.imagenRecomendada{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+ 
+}
+.imagenRecomendadaimg{
+    
+    width: 100%;
+    
+}
+.textRecomendadada{
+    font-size: 30px;
+    height: 20%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center ;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.textRecomendadada a{
+color:grey
+}
+.textRecomendadada a:hover{
+color:white
+}
+section{
+    position: relative;
+    margin:  auto;
+    width: 1000px;
+    height: 453px;
+    background: transparent;
+}
+aside#izq{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 453px;
+    background: transparent;
+
+}
+
+article{
+    position: absolute;
+    left: 200px;
+    width: 800px;
+    height: 453px;
+    top: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+article img{
+    width: 800px;
+    border-radius: 50px;
+}
+
+
+#titulodelproducto{
+    color: thistle;
+    text-align: center;
+}
+#descripciondelproducto{
+    color: thistle;
+    text-align: center;
+}
+footer{
+    position: relative;
+    margin:  20px auto;
+    width: 1000px;
+    height: 70px;
+    background: transparent;
+}
+#footerText{
+    color: wheat;
+}
+    
