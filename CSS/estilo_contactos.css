@@ -7,37 +7,28 @@
      
 }
 body{
-    
-    background-color: white;
-    background-image: url(../imagenes/puntos.jpg)  ;
+    background-color: black;
+    background-image: url(../imagenes/galaxia4.jpg)  ;
     background-repeat:no-repeat;
     background-size: 100%;
-    background-position-y: 120px;
-    background-position-x: center;
+    background-position-y: center;
 }
 header{
     position: relative;
-    margin:  auto;
-    width: 80%;
+    margin: 20px auto;
+    width: 1000px;
     height: 120px;
     background: transparent;
 }
 header div img {
     width: 100%;
     height: 100%;
-    filter: invert(0%);
-}
-header div h1{
-    position: absolute;
-    left:25%;
-    font-size: 80px;
-    top:0%;
-
+    filter: invert(100%);
 }
 #logo{
     position:absolute;
-    width: 20%;
-    height: 50%;
+    width: 200px;
+    height: 60px;
     background: white;
     top : 30px;
     left: 30px;
@@ -96,6 +87,7 @@ nav{
     font-size: 20px;
     color: grey;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 .textoBotones:hover{
     color: white;
@@ -142,8 +134,8 @@ height: 35px;
 padding-top: 15px;
 background-color: transparent;
 text-align: center;
-color: white    ;
-background: rgba(22, 22, 22,0.7);
+color: black    ;
+background: rgba(11, 16, 84,0.7);
 border-radius: 10px;
 }
 #contenedor:hover {
@@ -189,70 +181,64 @@ section{
     position: relative;
     margin:  auto;
     width: 1000px;
-    height: 453px;
+    height: 500px;
+    background: transparent ;
+}
+.cotactosFotos{
+    width: 33%;
+    height: 100%;
     background: transparent;
-}
-aside#izq{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: 453px;
-    background: rgba(22, 22, 22,0.9);
-    border-radius: 20px;
-
-
-}
-
-article{
-    position: absolute;
-    left: 200px;
-    height: 453px;
-    width: 800px;
-    top: 0;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-}
-
-article div img{   
-   
-    vertical-align:middle;
     border-radius: 50px;
-    width:  100%;
-}
-.content {
-	width:800px;
-	height:100%;
-	line-height:400px;
-	margin:0px auto;
-	text-align:center;
-	background-color:transparent;
-}
- 
-.content img {
-	vertical-align:middle;
 }
 
-#titulodelproducto{
-    color: #CCC;
-    text-align: center;
+#foto1{
+    position: absolute;
+    left: 0px;
+    background: transparent;
 }
-#descripciondelproducto{
-    color: #AAA;
-    text-align: center;
+#foto2{
+    position: absolute;
+    left: 33.33333%;
+    background: transparent;
 }
+#foto3{
+    position: absolute;
+    left: 66.6666%;
+    background: transparent;
+}
+.fotos{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.fotos:hover{
+   animation: mianimacion 1s ease-in-out 0s infinite normal none;
+}
+@keyframes mianimacion {
+
+    0%  {transform: perspective(500px) rotate3d(0, 1, 0, 0deg);}
+    10%  {transform: perspective(500px) rotate3d(0, 1, 0, 36deg);}
+    20% {transform: perspective(500px) rotate3d(0, 1, 0, 72deg);}
+    30%  {transform: perspective(500px) rotate3d(0, 1, 0, 108deg);}
+    40%  {transform: perspective(500px) rotate3d(0, 1, 0, 144deg);}
+    50%  {transform: perspective(500px) rotate3d(0, 1, 0, 180deg);}
+    60%  {transform: perspective(500px) rotate3d(0, 1, 0, 216deg);}
+    70%  {transform: perspective(500px) rotate3d(0, 1, 0, 252deg);}
+    80%  {transform: perspective(500px) rotate3d(0, 1, 0, 288deg);}
+    90%  {transform: perspective(500px) rotate3d(0, 1, 0, 324deg);}
+    100%  {transform: perspective(500px) rotate3d(0, 1, 0, 360deg);}    
+    }
+
+
+
 footer{
     position: relative;
     margin:  20px auto;
-    margin-bottom: 0px;
     width: 1000px;
-    height: 100%;
-    background: rgba(22, 22, 22,0.7);
-    border-radius: 20px;
+    height: 70px;
+    background: transparent;
 }
 #footerText{
-    margin:20px 20px;
-    color: #CCC;
+    color: wheat;
 }
     

@@ -5,58 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/scrollBar.css">
-    
-    
-    <title>index</title>
+    <title>Principal</title>
    
 </head>
 <body>
     <header>
         <div id="logo">
-            <img src="imagenes/icono.png" alt="imposible cargar">
+            <img src="imagenes/logoxD.jpg" alt="imposible cargar">
         </div>
-        <div><h1>INFINITY</h1></div>
         <div id="icono1" class="redes"></div>
         <div id="icono2" class="redes"></div>
         <div id="icono3" class="redes"></div>
     </header>
     <nav>
-		<ul>
-			<li><a href="#">Principal</a></li>
-			<li class="drop">
-				<a href="#">You</a>
-				
-				<div class="dropdownContain">
-					<div class="dropOut">
-						<div class="triangle"></div>
-						<ul>
-							<li>Plan</li>
-							<li>Account Settings</li>
-							<li>Switch Account</li>
-							<li>Sign Out</li>
-						</ul>
-					</div>
-				</div>
-			
-			</li>
-            <li class="drop"><a href="#">Contactos</a>
-            <div class="dropdownContain">
-                <div class="dropOut">
-                    <div class="triangle"></div>
-                    <ul>
-                        <li>Daniel Vega</li>
-                        <li>Victor Ochoa</li>
-                        <li>Aron Ramirez</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </li>
-            <li><a href="#">LogIn</a></li>
-		</ul>
-</nav>
+        <ul>
+            <li class="botones">
+                <a href="index.html" class="textoBotones" target="_self">Principal</a>
+            </li>
+            <li class="botones">
+                <a href="contactos.html" class="textoBotones">Contactos</a>
+            </li>
+            <li class="botones">
+                <a href="login.html" class="textoBotones">LOGIN</a>   
+            </li>
+            <li class="botones">
+            <a href="" class="textoBotones">Tienda</a>
+            </li>
+            <li class="botones">
+                <a href="" class="textoBotones">AunNoSeQuePoner</a>
+            </li>
+        </ul>
+    </nav>
     <div id="top"> 
         <ul>
                 <li id="cajapadre">
@@ -95,9 +74,13 @@
             </div>
         </aside>
         <article>
-            <div class="content">
-                <img src="../Infinity/imagenes/war1.jpg" alt="SPAe">
-            </div>
+            <img src="../Infinity/imagenes/war1.jpg" alt="SPAe">
+                <div id="contenedor2">
+                <div id="contenedorsuperior2"></div>
+                <div id="contenedorinferior2" class="redes">
+                <span><strong> <a href="" id="vinculoproducto"> COMPRAR JUEGO</a></strong></span>
+                </div>
+                </div>
         </article>
         <aside id="der">
             <div></div>
@@ -106,7 +89,16 @@
         </aside>
     </section>
     <footer>
-        <div id="footerText">Contactos <hr> Daniel Marcelo Vega Aguirre<br>Victor Ochoa <br>Aron Ramirez</div>
+            <div class="wrapper">
+                    <a href="#" class="fancy-button bg-gradient1"><span><i class="fa fa-wheelchair-alt"></i>Follow Me</span></a>
+                    <a href="#" class="fancy-button bg-gradient2"><span><i class="fa fa-envelope"></i>Messages</span></a>
+                </div><!-- /.wrapper -->
+                
+                <div class="wrapper">
+                    <a href="#" class="fancy-button pop-onhover bg-gradient1"><span>Post A Comment</span></a>
+                    <a href="#" class="fancy-button pop-onhover bg-gradient3"><span>Share Channel</span></a>
+                </div><!-- /.wrapper -->
+        <div id="footerText">Contactos <hr> Daniel Marcelo Vega Aguirre</div>
     </footer>
 </body>
 </html>

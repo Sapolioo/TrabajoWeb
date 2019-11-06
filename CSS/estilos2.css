@@ -1,0 +1,343 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: cursive;
+   
+}
+body{
+  background-color: black;
+  background-image: url(../imagenes/infinito.jpg)  ;
+  
+  background-size: 500px;
+  background-position-y: center;
+}
+header{
+  position: relative;
+  width: 80%;
+  height: 120px;
+  margin: 20px auto;
+  background: transparent;
+}
+header div img {
+  width: 100%;
+  filter: invert(00%);
+}
+#logo{
+  position:absolute;
+  width: 300px;
+  height: 60px;
+  background: white;
+  top : 30px;
+  left: 30px;
+}
+.redes{
+  position:absolute;
+  width: 42px;
+  height: 42px;
+  background: white;
+  border-radius: 100%;
+  filter: invert(100%);
+
+}
+
+#icono1{
+  top: 42px;
+  right: 120px;
+  background-image: url(../iconos/facebook.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 105%;
+}
+#icono2{
+  top: 42px;
+  right: 71px;
+  background-image: url(../iconos/Google.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 140%;
+}
+#icono3{
+  top: 42px;
+  right: 19px;
+  background-image: url(../iconos/twiter.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 140%;
+}
+nav{
+  position: relative;
+  margin: 20px auto;
+  width: 80%;
+  height: 48px;
+  background: blue;
+}
+ul
+{
+  position: relative;
+  height: 100%;
+  left: 0px;
+}
+.botones{
+  display: inline-block;
+  width: 20%;
+  margin-left: 50px ;
+  height: 100%;
+  text-align: center;
+  justify-content: space-around;
+ 
+  border-radius: 15px;
+}
+.textoBotones{
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+  color: grey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.textoBotones:hover{
+  color: white;
+}
+#top{
+  position: relative;
+  margin:  20px auto;
+  width: 1000px;
+  height: 190px;
+  background:transparent;
+}
+#top ul{
+  width: 1010px;
+  height:190px ;
+}
+#top ul li{
+  float: left;
+  width: 326px;
+  margin-right: 1%;
+  height: 190px;
+  background: transparent;
+}
+#cajapadre {
+position: relative;
+width: 326px;
+height: 190px;
+overflow: hidden;
+border-radius: 10px;
+}
+#contenedor {
+position: absolute;
+top: 0px;
+width: 326px;
+height: 324px;
+border-radius: 10px;
+}
+#contenedorsuperior {
+width: 326px;
+height: 190px;border-radius: 10px;
+}
+#contenedorinferior {
+width: 326px;
+height: 35px;
+padding-top: 15px;
+background-color: transparent;
+text-align: center;
+color: black    ;
+background: rgba(11, 16, 84,0.7);
+border-radius: 10px;
+}
+#contenedor:hover {
+top: -50px;
+border-radius: 10px;
+}
+
+
+
+
+
+.imagenRecomendada{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+
+}
+.imagenRecomendadaimg{
+  
+  width: 100%;
+  
+}
+.textRecomendadada{
+  font-size: 30px;
+  height: 20%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center ;
+  bottom: 0;
+  background-color: transparent;
+}
+
+ 
+  @mixin buttonLayer {
+    
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+       height: 100%;
+    margin: auto;
+      border: 5px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+       border-image-slice: 1;
+  }
+  
+  .textoBotones {
+    
+    z-index: 1;
+      background:  linear-gradient(to top left, rgba(249,208,129,.2) 0%, rgba(227,2,62,.2) 40%, rgba(49,128,135,.2) 100%);
+      border: 5px solid ;
+      border-image-source: linear-gradient(to top left, rgba(249,208,129,1) 0%, rgba(227,2,62,1) 40%, rgba(49,128,135,1) 100%);
+      border-image-slice: 1;
+    transition: transform .25s;
+    letter-spacing: .2rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+  }
+  .textoBotones::after {
+      
+      z-index: -1;
+        background:  linear-gradient(to bottom left, rgba(249,208,129,.25) 10%, rgba(227,2,62,.25) 30%, rgba(49,128,135,.25) 90%);
+      border-image-source: linear-gradient(to bottom left, rgba(249,208,129,1) 10%, rgba(227,2,62,1) 30%, rgba(49,128,135,1) 90%);
+      transition: opacity 1s;
+    }
+  
+    .textoBotones:active {
+      transform: scale(.96);
+    }
+      .textoBotones::before {
+        opacity: 1;
+      }
+    
+  
+      .textoBotones::before {
+     
+      z-index: 0;
+      border-image-source: linear-gradient(to bottom left, rgba(249,208,129,1) 20%, rgba(227,2,62,1) 40%, rgba(49,128,135,1) 70%);
+      transition: opacity .5s;
+    }
+  
+    .textoBotones:hover::after {
+      opacity: 1;
+    }
+  
+  
+
+  
+
+
+.textRecomendadada a{
+color:grey
+}
+.textRecomendadada a:hover{
+color:white
+}
+section{
+  position: relative;
+  margin:  auto;
+  width: 1000px;
+  height: 453px;
+  background: transparent;
+}
+aside#izq{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 453px;
+  background: transparent;
+
+}
+
+article{
+  position: absolute;
+  left: 200px;
+  width: 800px;
+  height: 453px;
+  top: 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+article img{
+  width: 800px;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+article {
+  overflow: hidden;
+  }
+  #contenedor2 {
+  position: absolute;
+  top: 0px;
+  width: 800px;
+  height: 453px;
+  }
+  #contenedorsuperior2 {
+  width: 800px;
+  height: 453px;
+  border-radius: 50px;    
+display: flex;
+  }
+  #contenedorinferior2 {
+  
+  width: 800px;
+  height: 35px;
+  padding-top: 15px;
+  text-align: center;
+  background: rgba(11, 16, 84,0.7);
+  border-radius: 50px;
+  height: 100px;
+  }
+  #contenedor2:hover {
+  top: 340px;
+  border-radius: 20%;   
+  display: flex;
+
+}
+#vinculoproducto{
+  font-size: 300%;
+}
+
+
+#titulodelproducto{
+  color: thistle;
+  text-align: center;
+}
+#descripciondelproducto{
+  color: thistle;
+  text-align: center;
+}
+footer{
+  position: relative;
+  margin:  20px auto;
+  width: 1000px;
+  height: 70px;
+  background: transparent;
+}
+#footerText{
+  color: wheat;
+}
