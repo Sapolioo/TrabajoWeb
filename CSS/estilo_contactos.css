@@ -41,7 +41,9 @@ header div img {
     border-radius: 100%;
  
 }
-
+.redes:hover{
+    animation: mianimacion 1s ease-in-out 0s infinite normal none;
+ }
 #icono1{
     top: 42px;
     right: 120px;
@@ -50,6 +52,7 @@ header div img {
     background-position-y: center;
     background-size: 105%;
 }
+
 #icono2{
     top: 42px;
     right: 71px;
