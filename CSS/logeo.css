@@ -33,17 +33,18 @@ textarea {
 #container {
   border: solid 3px #474544;
   max-width: 768px;
-  margin: 60px auto;
+  margin: 20px auto 50px;
   position: relative;
   background: -webkit-radial-gradient( center, #FFFFFF, #666666);
   opacity: 95%;
 }
 form {
+
   padding: 37.5px;
-  margin: 50px 0;
+  margin: 10px 0px 50px;
 }
 
-h1 {
+#container > h1 {
   color: #474544;
   font-size: 32px;
   font-weight: 700;
@@ -52,24 +53,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.underline {
-  border-bottom: solid 2px #474544;
-  margin: -0.512em auto;
-  width: 80px;
-}
-
-.icon_wrapper {
-  margin: 50px auto 0;
-  width: 100%;
-}
-
-.icon {
-  display: block;
-  fill: #474544;
-  height: 50px;
-  margin: 0 auto;
-  width: 50px;
-}
 
 .email {
 	float: right;
@@ -174,7 +157,8 @@ textarea {
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
-	transition: all 0.3s;
+    transition: all 0.3s;
+    float: left;
 }
 
 #form_button:hover {
@@ -220,4 +204,7 @@ textarea {
   input[type='text'], [type='email'], select, textarea {
     font-size: 0.875em;
   }
+}
+.logeo{
+    float: right;
 }
