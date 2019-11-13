@@ -1,0 +1,51 @@
+-- 1
+ALTER TABLE juego
+ADD CONSTRAINT FK_juego_consola
+FOREIGN KEY (consola)
+REFERENCES consola(id_consola);
+-- 2
+ALTER TABLE juego
+ADD CONSTRAINT FK_juego_control
+FOREIGN KEY (control)
+REFERENCES control(id_control);
+-- 3
+ALTER TABLE juego
+ADD CONSTRAINT FK_juego_genero
+FOREIGN KEY (genero)
+REFERENCES genero(id_genero);
+-- 4
+ALTER TABLE tienda
+ADD CONSTRAINT FK_tienda_empleado
+FOREIGN KEY (empleado)
+REFERENCES empleado(id_empleado);
+
+-- 6
+ALTER TABLE reservas
+ADD CONSTRAINT FK_reservas_cliente 
+FOREIGN KEY (cliente)
+REFERENCES cliente(id_cliente);
+-- 7
+ALTER TABLE pedido 
+ADD CONSTRAINT FK_pedido_cliente 
+FOREIGN KEY (cliente)
+REFERENCES cliente(id_cliente);
+-- 8
+ALTER TABLE reservas
+ADD CONSTRAINT FK_reservas_juego
+FOREIGN KEY (juego)
+REFERENCES juego(id_juego);
+-- 9
+ALTER TABLE tienda
+ADD CONSTRAINT FK_tienda_almacen 
+FOREIGN KEY (almacen)
+REFERENCES almacen(id_almacen);
+-- 10
+ALTER TABLE almacen
+ADD CONSTRAINT FK_almacen_disponibilidad 
+FOREIGN KEY (disponibilidad)
+REFERENCES disponibilidad(id_disponibilidad);
+-- 11
+ALTER TABLE pedido
+ADD CONSTRAINT FK_pedido_juego
+FOREIGN KEY (juego)
+REFERENCES juego(id_juego);
