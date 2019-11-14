@@ -1,61 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/scrollBar.css">
-    <title>index</title>
-   
-</head>
-<body>
-       
-    <header>
-        <div id="logo">
-            <img src="imagenes/icono.png" alt="imposible cargar">
-        </div>
-        <div><h1>INFINITY </h1></div>
-        <div id="icono1" class="redes"></div>
-        <div id="icono2" class="redes"></div>
-        <div id="icono3" class="redes"></div>
-    </header>
-    <nav>
-		<ul>
-			<li><a href="index.html">Principal</a></li>
-			<li class="drop">
-				<a href="#">You</a>
-				
-				<div class="dropdownContain">
-					<div class="dropOut">
-						<div class="triangle"></div>
-						<ul>
-							<li>Plan</li>
-							<li>Account Settings</li>
-							<li>Switch Account</li>
-							<li>Sign Out</li>
-						</ul>
-					</div>
-				</div>
-			
-			</li>
-            <li class="drop"><a href="#">Contactos</a>
-            <div class="dropdownContain">
-                <div class="dropOut">
-                    <div class="triangle"></div>
-                    <ul>
-                        <li>Daniel Vega</li>
-                        <li>Victor Ochoa</li>
-                        <li>Aron Ramirez</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </li>
-            <li><a href="login.html">LogIn</a></li>
-		</ul>
-</nav>
+<?php
+include("header.php");
+?>
+
+
     <div id="top"> 
         <ul>
                 <li id="cajapadre">
