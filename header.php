@@ -29,7 +29,7 @@ include("conexion.php");
     </header>
     <nav>
 		<ul>
-			<li><a id="aaa" href="index.php">Principal</a></li>
+			<li><a id="aaa"     href="index.php">Principal</a></li>
 			<li class="drop">
                 <a id="aaa" href="destroyer.php"><?= $_SESSION['nombre'];?></a>
 				
