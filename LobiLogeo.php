@@ -13,7 +13,7 @@ include("header.php");
   <!-- Nombre de usuario.
        Campo obligatorio, entre 5-40 carácteres -->
   Usuario: <input type="box " name="nombre" placeholder="Por ejemplo, Juan"
-                  minlength="5" maxlength="40" required>
+                  minlength="1" maxlength="40" required>
   <!-- Contraseña.
        Campo obligatorio, mínimo 11 carácteres -->
   Password: <input type="password" name="pass" placeholder="Contraseña"
