@@ -31,15 +31,29 @@ include("conexion.php");
 		<ul>
 			<li><a id="aaa"     href="index.php">Principal</a></li>
 			<li class="drop">
-                <a id="aaa" href="destroyer.php"><?= $_SESSION['nombre'];?></a>
+            <?php 
+
+
+                    if ( $_SESSION['nombre'] != "YOU" )
+                    {
+                        $_link="administrarCuenta.php";
+                    }
+                    else
+                    {
+                    $_link="LobiLogeo.php";
+                    }
+                    ?>
+
+
+                <a id="aaa" href="<?php echo $_link; ?>"><?= $_SESSION['nombre'];?></a>
 				
 				<div class="dropdownContain">
 					<div class="dropOut">
 						<div class="triangle"></div>
 						<ul>
-							<ol> <a href="busqueda.php"> Busqueda </a> </ol>
-							<ol><a href="">Administrar</a></ol>
-							<ol><a href="">Algo </a></ol>
+							<ol><a href="busqueda.php"> Busqueda </a> </ol>
+							<ol><a href="administrar.php">Administrar</a></ol>
+							<ol><a href="administrarCuenta.php">Administrar Cuenta </a></ol>
 							
 						</ul>
 					</div>

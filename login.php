@@ -41,8 +41,6 @@ include("header.php");
         </div>
     </form><!-- // End form -->
   </div><!-- // End #container -->
-    <footer>
-        <div id="footerText">Contactos <hr> Daniel Marcelo Vega Aguirre<br>Victor Ochoa <br>Aron Ramirez</div>
-    </footer>
-</body>
-</html>
+  <?php
+       include("footer.php");
+       ?>

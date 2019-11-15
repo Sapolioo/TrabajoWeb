@@ -209,6 +209,18 @@ section{
     height: 453px;
     background: transparent;
 }
+#sectionM{
+    position: relative;
+    margin:  auto;
+    
+    width: 800px;
+    background: transparent;
+
+}
+#sectionM>form{
+    padding: 25px;
+    border-radius: 30px;
+}
 aside#izq{
     position: absolute;
     left: 0;
