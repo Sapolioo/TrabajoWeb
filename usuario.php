@@ -3,7 +3,6 @@
       
     $nombre = $_POST ['nombre'];
     $pass = $_POST ['pass'];
-    echo $nombre,$pass;
     $query = "SELECT *
 FROM cuentas
 WHERE usuario = '$nombre'
@@ -15,10 +14,19 @@ if(mysqli_num_rows($resultado)==1)
         $array = mysqli_fetch_array($resultado);
         $_SESSION['tipo']=$array['tipo'];
         $_SESSION['nombre']=$nombre;
+        header ('Location: index.php') ;
+
+    
     }
+    else
+    {
+        $_SESSION['message'] = 'Usuario o Contraseña Incorrecta, prueba otra vez';
+        $_SESSION['message_type'] = 'danger';
+        header ('Location: LobiLogeo.php') ;
 
+    }
+    
 
-header ('Location: index.php') ;
 
 
 
