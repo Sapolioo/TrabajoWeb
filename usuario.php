@@ -1,5 +1,6 @@
 <?php
     include('conexion.php');
+      
     $nombre = $_POST ['nombre'];
     $pass = $_POST ['pass'];
     echo $nombre,$pass;
