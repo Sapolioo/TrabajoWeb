@@ -6,6 +6,19 @@ $queryGenero="SELECT nombre AS 'nombre', id_genero AS 'id_genero'  FROM genero";
 $res_Consola = mysqli_query($conn , $queryConsolas);
 $res_Controles = mysqli_query($conn , $queryControles);
 $res_Genero = mysqli_query($conn , $queryGenero);
+$id=$_GET['id'];
+$query="SELECT 
+juego.nombre AS 'nombre',
+juego.precio AS 'precio',
+juego.descripcion As 'des'
+FROM juego 
+WHERE juego.id_juego='$id'";
+$res=mysqli_query($conn,$query);
+$row = mysqli_fetch_array($res);
+$nombre=$row['nombre'];
+$precio=$row['precio'];
+$des=$row['des'];
+
 ?>
 
 
@@ -13,11 +26,11 @@ $res_Genero = mysqli_query($conn , $queryGenero);
 
 
 <div id="sectionM">
-<form class="bg-secondary" action="nuevo_registro.php" method="POST" enctype='multipart/form-data' autocomplete="off">
+<form class="bg-secondary" action="editar_registro.php?id=<?php echo $id?>" method="POST" enctype='multipart/form-data' autocomplete="off">
   <div class="form-group row">
         <label for="inputEmail3" class="col-sm-2 col-form-label">Juego</label>
     <div class="col-sm-10">
-      <input name="nombre"type="text" class="form-control" id="inputEmail3" placeholder="Juego">
+      <input name="nombre"type="text" class="form-control" id="inputEmail3" placeholder="Juego" value=" <?php echo $nombre ?>">
     </div>
   </div>
   
@@ -25,7 +38,7 @@ $res_Genero = mysqli_query($conn , $queryGenero);
   <div class="form-group row">
     <label for="inputPassword3" class="col-sm-2 col-form-label">Descripcion</label>
     <div class="col-sm-10">
-      <input type="text" name="descripcion" class="form-control" id="inputPassword3" placeholder="Descripcion">
+      <input type="text" value=" <?php echo $des ?>" name="descripcion" class="form-control" id="inputPassword3" placeholder="Descripcion">
     </div>
   </div>
 
@@ -34,7 +47,7 @@ $res_Genero = mysqli_query($conn , $queryGenero);
 <div class="form-group row">
 <label for="inputEmail3" class="col-sm-2 col-form-label">Precio</label>
 <div class="col-sm-10">
-<input type="text" class="form-control" name="precio" id="inputEmail3" placeholder="Precio">
+<input type="text" value=" <?php echo $precio ?>" class="form-control" name="precio" id="inputEmail3" placeholder="Precio">
 </div>
 </div>
   

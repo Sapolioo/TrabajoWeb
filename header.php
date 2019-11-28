@@ -19,12 +19,12 @@ include("conexion.php");
        
     <header>
         <div id="logo">
-            <img src="imagenes/icono.png" alt="imposible cargar">
+            <a href="index.php"><img src="imagenes/icono.png" alt="imposible cargar"></a>
         </div>
         <div><h1>INFINITY </h1></div>
-        <div id="icono1" class="redes"></div>
-        <div id="icono2" class="redes"></div>
-        <div id="icono3" class="redes"></div>
+        <div id="icono1" class="redes"> <a href="https://www.facebook.com/Infinity-101633657987333/?modal=admin_todo_tour"><img src="iconos/facebook.png" alt=""></a>  </div>
+        <div id="icono2" class="redes"> <a href="https://www.facebook.com/Infinity-101633657987333/?modal=admin_todo_tour"><img src="iconos/Google.png" alt=""></a>  </div>
+        <div id="icono3" class="redes"> <a href="https://www.facebook.com/Infinity-101633657987333/?modal=admin_todo_tour"><img src="iconos/teiter.png" alt=""></a>  </div>
        
     </header>
     <nav>
@@ -51,9 +51,43 @@ include("conexion.php");
 					<div class="dropOut">
 						<div class="triangle"></div>
 						<ul>
-							<ol><a href="busqueda.php"> Busqueda </a> </ol>
-							<ol><a href="administrar.php">Administrar</a></ol>
-							<ol><a href="administrarCuenta.php">Administrar Cuenta </a></ol>
+							<li><a href="busqueda.php" class="text-dark"> Busqueda </a> </li>
+                            <?php 
+
+
+                                if ( $_SESSION['nombre'] != "YOU"  )
+                                {
+                                    if( $_SESSION['tipo'] != "1" )
+                                    {$_link="administrar.php";
+                                    ?>                                    
+                                    <li><a href="<?php echo $_link; ?>" class="text-dark">Administrar</a></li>
+                                    <?php 
+                                    }    
+                            }
+                                else
+                                {
+                                    
+                                    $_link="LobiLogeo.php";
+                                }
+                                ?>
+                                <li>
+                            
+                            <?php 
+
+
+                    if ( $_SESSION['nombre'] != "YOU" )
+                    {
+                        ?>
+                        <a href="<?php echo $_link; ?>"class="text-dark" >Administrar Cuenta </a></li>
+                        <?php
+                        $_link="administrarCuenta.php";
+                    }
+                    else
+                    {
+                    $_link="LobiLogeo.php";
+                    }
+                    ?>
+                            
 							
 						</ul>
 					</div>

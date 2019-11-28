@@ -1,3 +1,5 @@
+
+
 <?php
 $mysqli = new mysqli(
     'localhost',
@@ -19,12 +21,12 @@ if(isset($_POST['nombre']))
     $control=$_POST['control'];
     $precio=$_POST['precio'];
     $genero=$_POST['genero'];
-   
+    $id=$_GET['id'];
     
 
 
+    $query="UPDATE `juego` SET `nombre` = '$nombre', `precio` = '$precio', `descripcion` = '$descripcion',`j_online` = '$j_online', `consola` = '$consola', `control` = '$control', `genero` = '$genero' WHERE juego.id_juego = '$id'";
 
-    $query="INSERT INTO `juego` (`id_juego`, `nombre`, `precio`, `descripcion`, `j_online`, `consola`, `control`, `genero`) VALUES (NULL, '$nombre', '$precio', '$descripcion', '$j_online', '$consola', '$control', '$genero')";
     
     $res=  $mysqli->query($query);
     $id_insert=$mysqli->insert_id;
@@ -34,9 +36,12 @@ if(isset($_POST['nombre']))
 		
 		$permitidos = array("image/gif","image/png","image/jpg","application/pdf");
 		$limite_kb = 2000;
+		
+		
+			
 			$ruta = 'Juegos/'.$id_insert.'/';
 			$archivo = $ruta.$_FILES["archivo"]["name"];
-			$ruta2=$archivo;
+			
 			if(!file_exists($ruta)){
 				mkdir($ruta);
 			}
@@ -58,9 +63,7 @@ if(isset($_POST['nombre']))
 			
 		
 	}
-	
-	
-	
+    
     
     
     
@@ -86,7 +89,7 @@ if(isset($_POST['nombre']))
 						<h3>ERROR AL GUARDAR</h3>
 					<?php } ?>
 					
-					<a href="administrar.php" class="btn btn-primary">Regresar</a>
+					<a href="busqueda.php" class="btn btn-primary">Regresar</a>
 					
 				</div>
 			</div>

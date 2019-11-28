@@ -75,6 +75,14 @@ header div h1{
     background-position-y: center;
     background-size: 105%;
 }
+.icono{
+    
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 105%;
+    height: 20px;
+    width: 20px;
+}
 #icono2{
     top: 42px;
     right: 71px;
@@ -123,7 +131,13 @@ nav{
     height: 190px;
     background:transparent;
 }
-
+#toptop{
+    position: relative;
+    margin:  20px auto;
+    width: 1000px;
+    
+    background:transparent;
+}
 #top ul{
     width: 1010px;
     height:190px ;

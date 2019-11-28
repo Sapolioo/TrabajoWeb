@@ -8,7 +8,7 @@ include("header.php");
     <link rel="stylesheet" href="CSS/LobiLogeo2.css">
     
 <div id="container" class="container">
-     <h1><br>&bull;  INICIO DE SECIÓN &bull;</h1>
+     <h1><br>&bull;  INICIO DE SESIÓN &bull;</h1>
      <form name="formulario" method="POST" action="usuario.php" class="mx-auto row px-md-5">
           <div class="row">
           <?php 
@@ -72,4 +72,6 @@ include("header.php");
   <?php
        include("footer.php");
        ?>
+
+
 

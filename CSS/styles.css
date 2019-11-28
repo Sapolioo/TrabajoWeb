@@ -45,7 +45,7 @@ ul li.drop {
 ul > li {
 	display: inline-block;
 }
-ul li a {
+#aaa {
 	line-height: 80px;
 	padding: 0 80px;
 	height: 80px;
@@ -58,7 +58,7 @@ ul li a {
     border-radius: 10px;
     background: #999;
 }
-ul li a:hover {
+#aaa:hover {
     color: black;
     background: #222;
     
@@ -129,11 +129,14 @@ ul li a:hover {
 	background: grey;
 }
 
-ul li:hover a { color: white; }
+ul li:hover #aaa { color: white; }
 ul li:hover .dropdownContain { top: 65px; }
 ul li:hover .underline { border-bottom-color: #777; }
 ul li:hover .dropOut { opacity: 1; margin-top: 8px; }
-
+ul li a{
+	font: 13px Verdana, 'Lucida Grande';
+	cursor: pointer;
+}
 
 
 
